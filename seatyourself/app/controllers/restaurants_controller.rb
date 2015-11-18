@@ -37,7 +37,7 @@ end
 
 def destroy
 	@restaurant = Restaurant.find(params[:id])
-	@product.destroy
+	@restaurant.destroy
 	redirect_to restaurants_path
 end
 

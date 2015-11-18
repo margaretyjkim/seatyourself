@@ -1,0 +1,6 @@
+<h1>Reservations</h1>
+<%= link_to "New Reservation", "/reservations/new" %>
+
+<% @reservations.each do |reservation| %>
+	<p><%= reservation.name %>, <%= reservation.address %></p>
+<% end %>
