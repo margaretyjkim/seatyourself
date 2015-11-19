@@ -1,6 +1,6 @@
 <h1>Reservations</h1>
-<%= link_to "New Reservation", "/reservations/new" %>
+<%= link_to "New Reservation", new_restaurant_reservation_path(@restaurant) %>
 
 <% @reservations.each do |reservation| %>
-	<p><%= reservation.name %>, <%= reservation.address %></p>
+	<p><%= reservation.date_time %>, <%= reservation.number_of_guests %></p>
 <% end %>

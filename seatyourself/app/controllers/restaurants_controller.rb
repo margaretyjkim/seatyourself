@@ -5,6 +5,7 @@ end
 
 def show
 	@restaurant = Restaurant.find(params[:id])
+
 end
 
 def new
@@ -19,7 +20,7 @@ def create
 	@restaurant = Restaurant.new(restaurant_params)
 
 	if @restaurant.save
-		redirect_to restaurant_url
+		redirect_to restaurants_url
 	else
 		render :new
 	end

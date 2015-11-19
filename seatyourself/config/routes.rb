@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
     resources :users
-    resources :restaurants
-    resources :reservations
+    resources :restaurants do
+      resources :reservations
+    end
     resources :sessions, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
