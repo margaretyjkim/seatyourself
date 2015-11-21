@@ -19,7 +19,7 @@ def create
 	@user = User.new(user_params)
 
 	if @user.save
-		redirect_to user_url(@user)
+		redirect_to restaurants_url
 	else
 		render :new
 	end
