@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	color: black;
+	background-color: white;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+body {
+	background-image: url("http://www.riadfes.com/wp-content/uploads/2012/02/restaurant-riad-fes3.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+p {
+	color: black;
+	text-align: center;
+	background-color: white;
+	opacity: 0.7;
+	
+}
+
+p.userinfo {
+    position: absolute;
+    bottom: 30px;
+    text-align: right;
+}
+
+div {
+	color: white;
+	text-align: center;
+	opacity: 0.9;
+
+}
+/*
+#title {
+	color: red;
+}
+
+#login {
+	font-family: fantasy;
+}*/
+
+
+
+
